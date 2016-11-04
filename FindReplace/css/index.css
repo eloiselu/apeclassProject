@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #131010;
+}
+
+p {
+    background: #fff;
+    width: 600px;
+    padding: 30px;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    line-height: 36px;
+    border-radius: 3px;
+}
+
+#wrap {
+    width: 800px;
+    margin: 30px auto;
+    position: relative;
+}
+
+#buttons {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#buttons a {
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    display: block;
+    background: #30b9d4;
+}
+
+#buttons a:hover {
+    background: #227311;
+}
+
+#buttons span {
+    display: none;
+}
+
+#buttons span a {
+    background: #227311;
+}
+
+#toolbox {
+    border: 10px solid #fff;
+    width: 620px;
+    padding: 10px;
+    background: #e3ebec;
+    font-size: 0;
+    display: none;
+    position: relative;
+    border-radius: 3px;
+}
+
+#search, #replace {
+    border-top: 3px solid #30b9d4;
+    margin-top: 3px;
+    display: none;
+}
+
+.search #search {
+    display: block;
+}
+
+.search #replace {
+    display: none;
+}
+
+.search span:nth-of-type(1) {
+    background: #30b9d4;
+    color: #fff;
+}
+
+.replace #search {
+    display: none;
+}
+
+.replace #replace {
+    display: block;
+}
+
+.replace span:nth-of-type(2) {
+    background: #30b9d4;
+    color: #fff;
+}
+
+#toolbox span {
+    font-family: "微软雅黑";
+    font-size: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#search input[type="text"], #replace input[type="text"] {
+    margin: 20px 0;
+    padding: 2px;
+    height: 24px;
+    width: 200px;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#search input[type="button"], #replace input[type="button"] {
+    margin: 20px 0;
+    height: 30px;
+    width: 56px;
+    font-size: 20px;
+}
+
+#close {
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
