@@ -1,0 +1,253 @@
+/*导航部分*/
+nav {
+    height: 60px;
+}
+
+nav .navLogo {
+    float: left;
+    margin-left: 50px;
+}
+
+nav .navLogo img {
+    width: 200px;
+    height: 60px;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    font: bold 16px/60px "微软雅黑";
+}
+
+/*banner部分*/
+#banner {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 60px;
+    background: url(../images/bg1.jpg) no-repeat center;
+    display: table;
+}
+
+#banner .center {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#banner p {
+    color: #fff;
+    font: 26px/45px 微软雅黑;
+}
+
+#banner p:nth-of-type(2) {
+    font-size: 20px;
+}
+
+#banner .text {
+    width: 100%;
+    height: 72px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+#banner .text div {
+    width: 200px;
+    height: 72px;
+}
+
+#banner .text div:nth-of-type(1) {
+    background: url(../images/text_left.png) no-repeat;
+}
+
+#banner .text div:nth-of-type(2) {
+    background: url(../images/text_right.png) no-repeat;
+}
+
+#banner .btn {
+    margin-top: 70px;
+}
+
+#banner .btn a {
+    width: 100px;
+    font: 18px/44px 微软雅黑;
+    color: #fff;
+    text-align: center;
+    margin: 0 15px;
+    display: inline-block;
+    background: #08b573;
+}
+
+#banner .btn a:nth-of-type(2) {
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background: #84050e;
+    }
+    50% {
+        background: #08b573;
+    }
+    100% {
+        background: #b60202;
+    }
+}
+
+/*第二部分-海棠前端，精品课程*/
+#second .header {
+    text-align: center;
+}
+
+#second .header h2 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+#second .header .line {
+    width: 103px;
+    height: 4px;
+    background: #fff;
+    margin: 14px auto;
+}
+
+#second .header h3 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #d1d1d1;
+}
+
+#second .circle {
+    background: url(../images/circle.jpg) no-repeat;
+    width: 700px;
+    height: 548px;
+    margin: 20px auto 0 auto;
+    position: relative;
+}
+
+.circle p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.circle p:nth-of-type(1) {
+    padding-bottom: 15px;
+}
+
+.circle strong {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.circle > div {
+    position: absolute;
+    text-align: center;
+}
+
+.circle > div:nth-of-type(1) {
+    left: 269px;
+    bottom: 441px;
+}
+
+.circle > div:nth-of-type(2) {
+    left: 474px;
+    top: 169px;
+    padding: 5px 10px 0 10px;
+    background: url(../images/text_leftBottom.png) no-repeat left 8px,
+    url(../images/text_rightTop.png) no-repeat right top;
+}
+
+.circle > div:nth-of-type(3) {
+    left: 471px;
+    top: 356px;
+    padding: 5px 10px 0 10px;
+    background: url(../images/text_leftTop.png) no-repeat left top,
+    url(../images/text_rightBottom.png) no-repeat right 8px;
+}
+
+.circle > div:nth-of-type(4) {
+    left: 286px;
+    top: 451px;
+}
+
+.circle > div:nth-of-type(5) {
+    right: 500px;
+    top: 357px;
+    padding-top: 8px;
+    background: url(../images/text_leftBottom.png) no-repeat left 8px,
+    url(../images/text_rightTop.png) no-repeat right top;
+}
+
+.circle > div:nth-of-type(6) {
+    right: 499px;
+    top: 176px;
+    padding: 5px 10px 0 10px;
+    background: url(../images/text_leftTop.png) no-repeat left top,
+    url(../images/text_rightBottom.png) no-repeat right 8px;
+}
+
+.number {
+    width: 80px;
+    height: 80px;
+    left: 296px;
+    top: 223px;
+    transform-style: preserve-3d; /*把父级变成一个3d空间*/
+    transform: perspective(800px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    animation: boxRotate 10s linear infinite;
+}
+
+.number div {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 60px;
+    font-family: arial;
+    line-height: 100px;
+    border: 3px solid #19decd;
+    box-shadow: 0 0 100px #19decd;
+    text-shadow: 0 0 20px #fff;
+}
+
+.number div:nth-of-type(1) {
+    transform: translateZ(40px);
+}
+
+.number div:nth-of-type(2) {
+    transform: translateZ(-40px);
+}
+
+.number div:nth-of-type(3) {
+    transform: translateY(40px) rotateX(-90deg);
+}
+
+.number div:nth-of-type(4) {
+    transform: translateY(-40px) rotateX(90deg);
+}
+
+.number div:nth-of-type(5) {
+    transform: translateX(40px) rotateY(90deg);
+}
+
+.number div:nth-of-type(6) {
+    transform: translateX(-40px) rotateY(90deg);
+}
+
+/*立方体旋转*/
+@keyframes boxRotate {
+    100% {
+        transform: perspective(800px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}

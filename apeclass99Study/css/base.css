@@ -1,0 +1,77 @@
+body, ul, ol, li, dl, dt, dd, div, a, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.clearFx::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+/*该网页公共部分*/
+body {
+    background: #000;
+}
+
+.center {
+    width: 960px;
+    margin: 0 auto;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*html的震动*/
+@keyframes pageShake {
+    0% {
+        margin: 0 0 0 0;
+    }
+    10% {
+        margin: -30px 0 0 -30px;
+    }
+    20% {
+        margin: -30px -30px 0 0;
+    }
+    30% {
+        margin: 0 -30px -30px 0;
+    }
+    40% {
+        margin: 0 0 -30px -30px;
+    }
+    50% {
+        margin: 0 0 -30px -30px;
+    }
+    60% {
+        margin: -15px 0 0 -15px;
+    }
+    70% {
+        margin: -15px -15px 0 0;
+    }
+    80% {
+        margin: 0 -15px -15px 0;
+    }
+    90% {
+        margin: 0 0 -15px -15px;
+    }
+    100% {
+        margin: 0 0 0 0;
+    }
+}
