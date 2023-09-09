@@ -1,6 +1,7 @@
-# apeclassProject
-海棠学院项目
+# Crabapple College project
 
-99元招生绚丽效果页面：https://lupanpan.github.io/apeclassProject/apeclass99Study/
+Enrollment Page with Stunning Effects for 99 RMB.
+Page Link: https://eloiselu.github.io/apeclassProject/apeclass99Study/
 
-查找替换文本页面：https://lupanpan.github.io/apeclassProject/FindReplace/
+Find and Replace Text Page.
+Page Link: https://eloiselu.github.io/apeclassProject/FindReplace/
